@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  vertical-align: top;
+}
+
+body {
+  background: rgb(102, 27, 123);
+  background: linear-gradient(
+    45deg,
+    rgba(102, 27, 123, 1) 0%,
+    rgba(0, 140, 172, 1) 100%
+  );
+}
+
+main {
+  display: flex;
+  height: 100vh;
+  width: 80%;
+  margin: auto;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-container {
+  display: flex;
+  background-image: linear-gradient(
+      0deg,
+      rgba(88, 0, 112, 0.7) 20%,
+      rgba(8, 0, 172, 0.7) 100%
+    ),
+    url("./mountain.jpg");
+  background-size: cover;
+  height: 70%;
+  width: 30%;
+  max-width: 30rem;
+  min-width: 20rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.img-container h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 2.5rem;
+  position: relative;
+  top: 10%;
+  left: 10%;
+  color: white;
+}
+
+.img-container p {
+  width: 100%;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #ffcef4;
+  margin-bottom: 1rem;
+}
+
+.img-container a {
+  color: #ffcef4;
+}
+/* img {
+  height: 100%;
+} */
+
+.form-container {
+  background-color: white;
+  height: 80%;
+  width: 40%;
+  max-width: 50rem;
+  min-width: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: stretch;
+  height: 80%;
+  width: 70%;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+}
+.form-input label {
+  text-transform: uppercase;
+  color: #ccc;
+  margin: 0.5rem 0;
+  font-size: 0.8rem;
+}
+
+.form-input input {
+  border: none;
+  font-size: 1rem;
+  border-bottom: 2px solid #ccc;
+  height: 1.5rem;
+}
+
+.form-input input:focus,
+.form-input input:active {
+  border: none;
+  outline: none;
+  border-radius: 0.2rem;
+  border-bottom: 2px solid #575757;
+}
+
+.form-control {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.form-control button {
+  background: linear-gradient(90deg, #2549d7 0%, #0065db 100%);
+  padding: 0.5rem 2rem;
+  margin: 0 0.5rem;
+  border: none;
+  border-radius: 1rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.form-control button:hover {
+  background: linear-gradient(90deg, #a3b6ff 0%, #75b2f8 100%);
+}
+
+.form-control p {
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+}
+
+.form-control p > a {
+  text-decoration: none;
+  color: #2549d7;
+  font-weight: 600;
+}
+.form-control p > a:hover {
+  color: #0077ff;
+}
