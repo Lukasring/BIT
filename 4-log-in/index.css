@@ -87,6 +87,35 @@ form {
   width: 70%;
 }
 
+.close {
+  position: relative;
+  right: -78%;
+  top: -45%;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+  cursor: pointer;
+}
+.close:hover {
+  opacity: 1;
+  transition: opacity ease-out 0.5s;
+}
+.close:before,
+.close:after {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 20px;
+  width: 2px;
+  background-color: #57575793;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+
 .form-input {
   display: flex;
   flex-direction: column;
