@@ -30,12 +30,14 @@ main {
 .img-container {
   position: fixed;
   display: flex;
+  filter: grayscale(20%);
   background-image: linear-gradient(
       0deg,
-      rgba(88, 0, 112, 0.7) 20%,
-      rgba(8, 0, 172, 0.7) 100%
+      rgba(50, 0, 97, 0.85) 20%,
+      rgba(130, 10, 241, 0.644) 60%,
+      rgba(0, 162, 236, 0.7) 100%
     ),
-    url("./mountain.jpg");
+    url("./mountain-min.jpg");
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -237,7 +239,7 @@ form {
 /*labai dideli ekranai*/
 @media (min-width: 120em) {
   main {
-    width: 60%;
+    width: 70%;
   }
 
   .img-container h1 {
