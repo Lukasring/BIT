@@ -7,25 +7,28 @@
 }
 
 body {
+  font-family: "Noto Sans TC", sans-serif;
   background: rgb(102, 27, 123);
   background: linear-gradient(
     45deg,
-    rgba(102, 27, 123, 1) 0%,
+    rgba(102, 27, 123, 1) 10%,
     rgba(0, 140, 172, 1) 100%
   );
 }
 
 main {
+  font-family: "Noto Sans TC", sans-serif;
   display: flex;
+  flex-direction: column;
   height: 100vh;
-  width: 80%;
-  margin: auto;
+  width: 100%;
   align-content: center;
   align-items: center;
   justify-content: center;
 }
 
 .img-container {
+  position: fixed;
   display: flex;
   background-image: linear-gradient(
       0deg,
@@ -34,11 +37,8 @@ main {
     ),
     url("./mountain.jpg");
   background-size: cover;
-  height: 70%;
-  max-height: 28rem;
-  width: 30%;
-  max-width: 30rem;
-  min-width: 20rem;
+  height: 100%;
+  width: 100%;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -48,8 +48,8 @@ main {
   font-weight: 100;
   font-size: 2.5rem;
   position: relative;
-  top: 10%;
-  left: 10%;
+  top: 1%;
+  text-align: center;
   color: white;
 }
 
@@ -58,7 +58,7 @@ main {
   font-size: 0.8rem;
   text-align: center;
   color: #ffcef4;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5em;
 }
 
 .img-container a {
@@ -69,12 +69,11 @@ main {
 } */
 
 .form-container {
+  position: fixed;
   background-color: white;
-  height: 80%;
-  max-height: 34rem;
-  width: 40%;
-  max-width: 50rem;
-  min-width: 20rem;
+  height: 75%;
+  /* max-height: 34rem; */
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -85,7 +84,7 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-content: stretch;
+  /* align-content: stretch; */
   height: 80%;
   width: 70%;
 }
@@ -100,6 +99,11 @@ form {
   font-size: 2rem;
   opacity: 0.3;
   cursor: pointer;
+  color: #ccc;
+}
+
+.close-btn:hover {
+  color: #575757;
 }
 
 .form-input {
@@ -109,15 +113,17 @@ form {
 .form-input label {
   text-transform: uppercase;
   color: #ccc;
-  margin: 0.5rem 0;
   font-size: 0.8rem;
+  margin: 0.5em 0;
+  font-family: "Noto Sans TC", sans-serif;
 }
 
 .form-input input {
   border: none;
   font-size: 1rem;
   border-bottom: 2px solid #ccc;
-  height: 1.5rem;
+  height: 1.2em;
+  font-family: "Noto Sans TC", sans-serif;
 }
 
 .form-input input:focus,
@@ -135,10 +141,11 @@ form {
 }
 .form-control button {
   background: linear-gradient(90deg, #2549d7 0%, #0065db 100%);
-  padding: 0.5rem 2rem;
-  margin: 0 0.5rem;
+  font-size: 0.8rem;
+  padding: 0.5em 2em;
+  margin: 0 0.5em;
   border: none;
-  border-radius: 1rem;
+  border-radius: 1em;
   font-weight: bold;
   color: white;
   cursor: pointer;
@@ -150,7 +157,7 @@ form {
 
 .form-control p {
   font-size: 0.8rem;
-  margin-left: 0.5rem;
+  margin-left: 0.5em;
 }
 
 .form-control p > a {
@@ -160,4 +167,95 @@ form {
 }
 .form-control p > a:hover {
   color: #0077ff;
+}
+
+/*mazi ekranai*/
+@media (min-width: 48.5em) {
+  main {
+    margin: auto;
+    flex-direction: row;
+    width: 85%;
+  }
+
+  .img-container {
+    position: relative;
+    height: 70%;
+    /* max-height: 28rem; */
+    width: 30%;
+    max-width: 30rem;
+    min-width: 20rem;
+  }
+
+  .img-container h1 {
+    font-weight: 100;
+    font-size: 2.5rem;
+    top: 10%;
+    left: 10%;
+    text-align: left;
+  }
+
+  .form-container {
+    position: static;
+    height: 80%;
+    /* max-height: 34rem; */
+    width: 40%;
+    max-width: 50rem;
+    min-width: 20rem;
+  }
+}
+
+/* vidutiniai ekranai */
+@media (min-width: 64em) {
+  main {
+    width: 80%;
+  }
+}
+/*dideli ekranai*/
+@media (min-width: 85.5em) {
+  main {
+    width: 70%;
+  }
+  .img-container h1 {
+    font-size: 3rem;
+  }
+
+  .img-container p {
+    font-size: 0.9rem;
+  }
+
+  .form-input label {
+    font-size: 0.9rem;
+  }
+  .form-input input {
+    font-size: 1.2rem;
+  }
+
+  .form-control button {
+    font-size: 1rem;
+  }
+}
+/*labai dideli ekranai*/
+@media (min-width: 120em) {
+  main {
+    width: 60%;
+  }
+
+  .img-container h1 {
+    font-size: 3.5rem;
+  }
+
+  .img-container p {
+    font-size: 1rem;
+  }
+
+  .form-input label {
+    font-size: 1rem;
+  }
+  .form-input input {
+    font-size: 1.3rem;
+  }
+
+  .form-control button {
+    font-size: 1rem;
+  }
 }
