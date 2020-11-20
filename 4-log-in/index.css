@@ -8,12 +8,14 @@
 
 body {
   font-family: "Noto Sans TC", sans-serif;
-  background: rgb(102, 27, 123);
+  /* background: rgb(102, 27, 123);
   background: linear-gradient(
     45deg,
     rgba(102, 27, 123, 1) 10%,
     rgba(0, 140, 172, 1) 100%
-  );
+  ); */
+  background-image: url("./backgroud.png");
+  background-size: cover;
 }
 
 main {
