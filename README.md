@@ -2,8 +2,8 @@
 
 ## Project links:
 
-[Serlokas](https://lukasring.github.io/BIT/2-serlokas);
+- **[Serlokas](https://lukasring.github.io/BIT/2-serlokas)**
 
-[Mergaite](https://lukasring.github.io/BIT/3-mergaite);
+- **[Mergaite](https://lukasring.github.io/BIT/3-mergaite)**
 
-[Sign Up Page](https://lukasring.github.io/BIT/4-log-in);
+- **[Sign Up Page](https://lukasring.github.io/BIT/4-log-in)**

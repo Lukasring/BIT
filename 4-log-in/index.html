@@ -11,7 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
-  <body>
+    <script src="./src/form.js" defer></script>
+    <body>
     <main>
       <div class="img-container">
         <h1>Sign Up</h1>
@@ -23,26 +24,30 @@
           <div class="form-input">
             <label for="username">Username</label>
             <input type="text" name="username" id="username" required />
+            <small class="error-msg">Bad</small>
           </div>
           <div class="form-input">
             <label for="email">E-mail</label>
             <input type="email" id="email" name="email" required />
+            <small class="error-msg">Email must be valid!</small>
           </div>
           <div class="form-input">
             <label for="password">Password</label>
             <input type="password" id="password" name="password" required />
+            <small class="error-msg">Password must be longer than 5 characters</small>
           </div>
           <div class="form-input">
-            <label for="repeatPassword">Repeat Password</label>
+            <label for="confirmPassword">Repeat Password</label>
             <input
               type="password"
-              id="repeatPassword"
-              name="repeatPassword"
+              id="confirmPassword"
+              name="confirmPassword"
               required
             />
+            <small class="error-msg">Passwords must match!</small>
           </div>
           <div class="form-control">
-            <button class="btn" type="submit">Get Started</button>
+            <button class="btn" id="submit-btn" type="submit" disabled>Get Started</button>
             <p>or <a href="./login/login.html">Sign In</a></p>
           </div>
         </form>

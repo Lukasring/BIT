@@ -36,6 +36,17 @@ form {
   color: var(--gray-darker);
 }
 
+.error-msg {
+  display: block;
+  height: 0.7rem;
+  font-size: 0.7rem;
+  color: var(--error-red);
+  visibility: hidden;
+}
+.form-input.error .error-msg {
+  visibility: visible;
+}
+
 .form-input {
   display: flex;
   flex-direction: column;
@@ -55,6 +66,12 @@ form {
   height: 1.2em;
   font-family: "Noto Sans TC", sans-serif;
 }
+.form-input.error input {
+  border-bottom: 2px solid var(--error-red);
+}
+.form-input.success input {
+  border-bottom: 2px solid var(--purple-main);
+}
 
 .form-input input:focus,
 .form-input input:active {
@@ -68,21 +85,6 @@ form {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-}
-.form-control button {
-  background: linear-gradient(90deg, #2549d7 0%, #0065db 100%);
-  font-size: 0.8rem;
-  padding: 0.5em 2em;
-  margin: 0 0.5em;
-  border: none;
-  border-radius: 1em;
-  font-weight: bold;
-  color: white;
-  cursor: pointer;
-}
-
-.form-control button:hover {
-  background: linear-gradient(90deg, #a3b6ff 0%, #75b2f8 100%);
 }
 
 .form-control p {
@@ -121,6 +123,10 @@ form {
   .form-input input {
     font-size: 1.2rem;
   }
+  .error-msg {
+    height: 0.9rem;
+    font-size: 0.9rem;
+  }
 }
 /*labai dideli ekranai*/
 @media (min-width: 120em) {
@@ -129,5 +135,9 @@ form {
   }
   .form-input input {
     font-size: 1.3rem;
+  }
+  .error-msg {
+    height: 1rem;
+    font-size: 1rem;
   }
 }

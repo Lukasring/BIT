@@ -1,6 +1,8 @@
 :root {
   --gray: #b3b3b3;
   --gray-darker: #5e5e5e;
+  --purple-main: #592067;
+  --error-red: #c40000;
 }
 
 * {
@@ -42,6 +44,11 @@ main {
 }
 .btn:hover {
   background: linear-gradient(90deg, #a3b6ff 0%, #75b2f8 100%);
+}
+.btn:disabled,
+.btn[disabled] {
+  background: var(--gray);
+  cursor: not-allowed;
 }
 
 /*mazi ekranai*/
