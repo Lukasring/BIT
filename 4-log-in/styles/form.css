@@ -1,0 +1,133 @@
+.form-container {
+  position: fixed;
+  background-color: white;
+  height: 75%;
+  max-height: 47em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* align-content: stretch; */
+  height: 80%;
+  width: 70%;
+}
+
+.close-btn {
+  display: flex;
+  position: relative;
+  right: -45%;
+  top: -9%;
+  height: 0;
+  width: 2rem;
+  font-size: 2rem;
+  opacity: 0.3;
+  cursor: pointer;
+  color: var(--gray);
+}
+
+.close-btn:hover {
+  color: var(--gray-darker);
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+}
+.form-input label {
+  text-transform: uppercase;
+  color: var(--gray);
+  font-size: 0.8rem;
+  margin: 0.5em 0;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.form-input input {
+  border: none;
+  font-size: 1rem;
+  border-bottom: 2px solid var(--gray);
+  height: 1.2em;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.form-input input:focus,
+.form-input input:active {
+  border: none;
+  outline: none;
+  border-radius: 0.2rem;
+  border-bottom: 2px solid var(--gray-darker);
+}
+
+.form-control {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.form-control button {
+  background: linear-gradient(90deg, #2549d7 0%, #0065db 100%);
+  font-size: 0.8rem;
+  padding: 0.5em 2em;
+  margin: 0 0.5em;
+  border: none;
+  border-radius: 1em;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.form-control button:hover {
+  background: linear-gradient(90deg, #a3b6ff 0%, #75b2f8 100%);
+}
+
+.form-control p {
+  font-size: 0.8rem;
+  margin-left: 0.5em;
+}
+
+.form-control p > a {
+  text-decoration: none;
+  color: #2549d7;
+  font-weight: 600;
+}
+.form-control p > a:hover {
+  color: #0077ff;
+}
+
+@media (min-width: 48.5em) {
+  .form-container {
+    position: static;
+    /* height: 80%; */
+    /* max-height: 34rem; */
+    width: 40%;
+    max-width: 50rem;
+    min-width: 20rem;
+  }
+}
+
+/* vidutiniai ekranai */
+@media (min-width: 64em) {
+}
+/*dideli ekranai*/
+@media (min-width: 85.5em) {
+  .form-input label {
+    font-size: 0.9rem;
+  }
+  .form-input input {
+    font-size: 1.2rem;
+  }
+}
+/*labai dideli ekranai*/
+@media (min-width: 120em) {
+  .form-input label {
+    font-size: 1rem;
+  }
+  .form-input input {
+    font-size: 1.3rem;
+  }
+}

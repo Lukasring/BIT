@@ -1,0 +1,87 @@
+:root {
+  --gray: #b3b3b3;
+  --gray-darker: #5e5e5e;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  vertical-align: top;
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  background-image: url("../img/backgroud.png");
+  background-size: cover;
+}
+
+main {
+  font-family: "Noto Sans TC", sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.btn {
+  background: linear-gradient(90deg, #2549d7 0%, #0065db 100%);
+  font-size: 0.8rem;
+  padding: 0.5em 2em;
+  margin: 0 0.5em;
+  border: none;
+  border-radius: 1em;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+.btn:hover {
+  background: linear-gradient(90deg, #a3b6ff 0%, #75b2f8 100%);
+}
+
+/*mazi ekranai*/
+@media (min-width: 48.5em) {
+  main {
+    margin: auto;
+    flex-direction: row;
+    width: 85%;
+  }
+}
+
+/* vidutiniai ekranai */
+@media (min-width: 64em) {
+  main {
+    width: 80%;
+  }
+}
+/*dideli ekranai*/
+@media (min-width: 85.5em) {
+  main {
+    width: 75%;
+  }
+  .btn {
+    font-size: 1rem;
+  }
+}
+/*labai dideli ekranai*/
+@media (min-width: 120em) {
+  main {
+    width: 70%;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
